@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background-image: ;
+    width: 95%;
+    max-width: 1440px;
+    border-radius: 9px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
+  header,
+  main,
+  footer {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+  }
+  header {
+    grid-area: header;
+  }
+  .main {
+    grid-area: main;
+  }
+  .form {
+    display: grid;
+    place-content: center;
+    gap: 15px;
+  }
+  .opb--srmd {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+  .suma {
+    grid-row: 1;
+    grid-column: 1/4;
+  }
+  .resta {
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  .mod,
+  .mult {
+    grid-column: 1/4;
+  }
+  .divi {
+    grid-column: 1/4;
+  }
+  .opb--hacer {
+    position: relative;
+    display: grid;
+    place-content: center;
+    gap: 15px;
+  }
+  .opb--srmd,
+  .opb--exp,
+  .article--cajaR {
+    display: none;
+  }
+  footer {
+    grid-area: footer;
+    margin: 5px 5px;
+    padding: 5px;
+  }
+  
+  div .resultado {
+    background-color: rgba(165, 42, 42, 0.322);
+    color: blue;
+  }
+  
+  @media screen and (min-width: 586px) and (max-width: 768px) {
+    body {
+      width: 98%;
+      max-width: 960px;
+      display: grid;
+      gap: 5px;
+      place-content: center;
+      grid-template-columns: 195px 195px 195px;
+      grid-template-rows: auto;
+    }
+    .main__section {
+      display: grid;
+      place-content: center;
+      grid-template-columns: 190px 190px 190px;
+      grid-template-rows: auto;
+    }
+    .article--uno {
+      grid-column: 1/4;
+    }
+    .form {
+      display: grid;
+      grid-template-columns: 260px 260px;
+      grid-template-rows: auto;
+    }
+    #listo {
+      transform: translate(50%);
+    }
+    .opb--srmd {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 5px;
+    }
+    .suma,
+    .resta,
+    .mult,
+    .divi,
+    .mod {
+      grid-column: 1;
+    }
+    .resta {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    .divi {
+      grid-row: 2;
+      grid-column: 2;
+    }
+    .mod {
+      grid-column: 1/3;
+    }
+    .section__modifxl {
+      grid-column: 1/5;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+    .article--total {
+      grid-column: 1/3;
+    }
+    .article--cajaR input {
+      display: grid;
+      place-content: center;
+      place-items: center;
+      width: 80%;
+    }
+    .opb--srmd,
+    .opb--exp,
+    .article--cajaR {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 2087px) {
+    body {
+      width: 99%;
+      display: grid;
+      place-content: center;
+      gap: 5px;
+      grid-template-columns: repeat(4, 2fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    }
+    header {
+      grid-area: header;
+    }
+    main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: repeat(4, 4fr);
+      grid-template-rows: auto;
+    }
+    .main__section {
+      grid-column: 1/5;
+    }
+    .form {
+      display: inline-block;
+    }
+    .edad {
+      display: block;
+      transform: translate(-5%);
+    }
+  
+    .article--opb {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 5px;
+    }
+  
+    .section__modifxl {
+      display: grid;
+      grid-template-columns: repeat(3, 3fr);
+      grid-template-rows: auto;
+    }
+  
+    .opb__eje {
+      display: grid;
+      place-content: center;
+      place-items: center;
+  
+      grid-template-columns: 170px 170px;
+      grid-template-rows: auto;
+    }
+    .opb--hacer {
+      grid-column: 1;
+    }
+  
+    .opb--hacer,
+    .opb--srmd,
+    .opb--exp,
+    .article--cajaR {
+      display: none;
+    }
+    .vm1 {
+      grid-column: 1/5;
+      width: 20%;
+      transform: translate(5%);
+    }
+  
+    footer {
+      grid-area: footer;
+    }
+  }
