@@ -68,7 +68,7 @@ if (
     obj.username === permitido.username &&
     parseInt(obj.password) === permitido.password &&
     obj.accept === permitido.accept ) {
-    window.open('http://127.0.0.1:5500/bit06exercises/docs/ejercicios.html', '_self');   
+    window.open('https://morales19062020.github.io/bit06exercises/ejercicios.html', '_self');   
 }else{
     alert('Acceso Denegado. Datos incorrectos. ', 'warning');; 
 }
