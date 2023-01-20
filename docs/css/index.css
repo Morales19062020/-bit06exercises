@@ -1,26 +1,26 @@
 body{
-    background: rgba(56, 57, 58, 0.479);
+    background:  rgba(56, 57, 58, 0.479) ;
     background-size: 100px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: cursive;
     
 }
 
 input{
     border-radius: 10px;
-    background-color: rgba(199, 197, 197, 0.487);
+    background-color:white;
 }
 
 button{
     border-radius: 10px;
-    background-color: rgba(30, 30, 30, 0.701);
+    background-color: rgba(30, 30, 30, 0.701) ;
     border: rgb(176, 159, 3) 2px solid;
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.567) 5px 5px 5px;
+    box-shadow: green ;
 }
 
 button:hover{
     border-radius: 10px;
-    background-color: rgba(30, 30, 30, 0.701);
-    border: rgb(0, 0, 0) 2px solid;
-    color: rgb(176, 159, 3);
+    background-color: rgba(30, 30, 30, 0.701) ;
+    border:  rgb(0, 0, 0) 2px solid;
+    color:  rgb(176, 159, 3) ;
 }
