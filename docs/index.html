@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Javascript</title>
+    <title>Ejercicios Receso</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,70 +20,35 @@
     />
 </head>
 <body>
-    <div class="container">
-        <header class="row justify-content-center">
-          <h1>Bienvenid@s</h1>
-          <p>
-            Aquí podrá realizar sus ejercicios de manera sencilla y práctica.
-            Antes de comenzar, por favor:
-          </p>
-        </header>
-        <nav class="container my-2 py-2">
-          <div class="row justify-content-center">
-            <button
-              id="button1"
-              class="col-xl-2 col-lg-2 col-md-3 col-sm-10 mx-4 my-2 border border-success border border-3 rounded-pill"
-            >
-              Inicie Sesión
-            </button>
-          </div>
-        </nav>
-  
-        <main class="container py-2 my-2">
-          <!--L.I-->
-          <section
-            class="row border border-3 rounded-3 border-success p-4 my-4"
-            id="is"
-          >
-            <h2>Iniciar Sesión</h2>
-            <form class="col-md-6 col-6">
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Correo Electrónico</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Contraseña</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="form-check d-inline-flex">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label mx-3" for="exampleCheck1"
-                  >Acepto todas las condiciones</label
-                >
-              </div>
-              <button type="submit" class="btn btn-success">Ingresar</button>
-            </form>
-            
-           </main>
-  
-        <footer></footer>
+  <form id="form" class="bg-black p-5 rounded-5">
+    <div class="d-flex justify-content-center"><img src="./img/login-icon.png" alt="login-icon"></div>
+    <h1 style="color: bisque; text-align: center;">Iniciar Sesión</h1>
+    <fieldset style="color: rgb(192, 146, 186);">
+        <hr>
+        <legend class="fs-6 text-center mb-3">Todos los campos <span class="text-danger">*</span> son
+            obligatorios.
+        </legend>
+        <div id="liveAlertPlaceholder"></div>
+        <div class="mb-3">
+            <label for="username" class="form-label">Ingrese su ID<span class="text-danger">*</span></label>
+            <input type="text" class="input-group" id="username" name="username"
+                aria-describedby="usernameHelp">
+            <div id="usernamelHelp" class="form-text">Tus datos son importantes, nosotros los protegemos!
+            </div>
+        </div>
+        <div class="mb-1">
+            <label for="password" class="form-label">Ingrese su Contraseña<span
+                    class="text-danger">*</span></label>
+            <input type="password" class="input-group" id="password" name="password">
+        </div>
+        <div class=" form-check d-flex justify-content-around mb-3 mt-3" style="color: white;">
+            <input type="checkbox" class="" id="accept" name="accept">
+            <label class="form-check-inline" for="accept">Acepto terminos y condiciones.<span
+                    class="text-danger">*</span></label>
+        </div>
+        <button type="submit" class="btn btn-info w-100 mt-">Iniciar Sesión</button>
+    </fieldset>
+</form>
       
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
