@@ -45,3 +45,26 @@ $ejercicio2.addEventListener('submit', (addEventListener) => {
   resultado2.placeholder = ejerc2num1 - ejerc2num2;
 
 });
+//Multiplicacion//
+const $ejercicio3 = document.getElementById('ejercicio3');
+const $multiplicacion = document.getElementById('ejercicio3')
+
+$ejercicio3.addEventListener('submit', (addEventListener) => {
+  event.preventDefault();
+
+  const ejerc3num1 = $ejercicio3.ejerc3num1.value
+  const ejerc3num2 = $ejercicio3.ejerc3num2.value
+
+  resultado3.placeholder = ejerc3num1 * ejerc3num2;
+
+});
+//Division//
+const $ejercicio4 = document.getElementById('ejercicio4');
+const $division = document.getElementById('ejercicio4')
+
+$ejercicio4.addEventListener('submit', (addEventListener) => {
+  event.preventDefault();
+  const ejerc4num1 = $ejercicio4.ejerc4num1.value
+  const ejerc4num2 = $ejercicio4.ejerc4num2.value
+  resultado4.placeholder = ejerc4num1 / ejerc4num2;
+});
