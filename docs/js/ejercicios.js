@@ -19,22 +19,16 @@ const alert = (message, type) => {
 
   alertPlaceholder.append(wrapper);
 }
-//Pedir edad al usuario//
-const $form = document.getElementById('form');
-  
-$form.addEventListener('submit', mayor);
+//Suma de numeros//
+const $ejercicio1 = document.getElementById('ejercicio1');
+const $sumar = document.getElementById('ejercicio1')
 
-function mayor (event) {
+
+$ejercicio1.addEventListener('submit', (addEventListener) => {
   event.preventDefault();
-  const $edad = document.getElementById('edad');
-  const edad = $edad.value;
 
-  if (edad == null || edad.length == 0){
-    document.getElementById('resultado'). innerHTML='Escribe tu edad por favor';
-  } else if (edad >= 18 && edad <= 100) {
-    document.getElementById('resultado'). innerHTML='Felicidades!. Eres mayor de edad!';
-  } else if (edad <= 17) {
-     document.getElementById('resultado'). innerHTML='Aun eres menor de edad! :(';
-  };
-}
-  
+  const ejerc1num1 = parseInt($ejercicio1.ejerc1num1.value)
+  const ejerc1num2 = parseInt($ejercicio1.ejerc1num2.value)
+
+  resultado1.placeholder = ejerc1num1 + ejerc1num2;
+});
