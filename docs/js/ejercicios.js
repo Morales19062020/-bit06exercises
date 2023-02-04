@@ -19,3 +19,22 @@ const alert = (message, type) => {
 
   alertPlaceholder.append(wrapper);
 }
+//Pedir edad al usuario//
+const $form = document.getElementById('form');
+  
+$form.addEventListener('submit', mayor);
+
+function mayor (event) {
+  event.preventDefault();
+  const $edad = document.getElementById('edad');
+  const edad = $edad.value;
+
+  if (edad == null || edad.length == 0){
+    document.getElementById('resultado'). innerHTML='Escribe tu edad por favor';
+  } else if (edad >= 18 && edad <= 100) {
+    document.getElementById('resultado'). innerHTML='Felicidades!. Eres mayor de edad!';
+  } else if (edad <= 17) {
+     document.getElementById('resultado'). innerHTML='Aun eres menor de edad! :(';
+  };
+}
+  

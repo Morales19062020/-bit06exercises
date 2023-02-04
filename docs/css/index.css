@@ -1,6 +1,6 @@
 body{
-    background:  rgba(56, 57, 58, 0.479) ;
-    background-size: 100px;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
     font-family: cursive;
     
 }
@@ -15,7 +15,7 @@ button{
     background-color: rgba(30, 30, 30, 0.701) ;
     border: rgb(176, 159, 3) 2px solid;
     color: white;
-    box-shadow: green ;
+    box-shadow: black ;
 }
 
 button:hover{
