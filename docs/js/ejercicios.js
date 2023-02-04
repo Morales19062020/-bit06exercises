@@ -32,3 +32,16 @@ $ejercicio1.addEventListener('submit', (addEventListener) => {
 
   resultado1.placeholder = ejerc1num1 + ejerc1num2;
 });
+//Resta de numeros//
+const $ejercicio2 = document.getElementById('ejercicio2');
+const $restar = document.getElementById('ejercicio2')
+
+$ejercicio2.addEventListener('submit', (addEventListener) => {
+  event.preventDefault();
+
+  const ejerc2num1 = $ejercicio2.ejerc2num1.value;
+  const ejerc2num2 = $ejercicio2.ejerc2num2.value;
+
+  resultado2.placeholder = ejerc2num1 - ejerc2num2;
+
+});
