@@ -101,4 +101,4 @@ $ejercicio4.addEventListener('submit', (addEventListener) => {
   const ejerc4num1 = $ejercicio4.ejerc4num1.value
   const ejerc4num2 = $ejercicio4.ejerc4num2.value
   resultado4.placeholder = ejerc4num1 / ejerc4num2;
-});
+}); 
